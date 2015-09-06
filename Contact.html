@@ -124,35 +124,18 @@ jQuery(document).ready(function($){
     <p>The cottages are owned by Anne Wasinski. Please contact Anne if you have any queries about Pen-y-Holt Farm. You can contact Anne either using the form below or calling 0208 398 6081 or 0777 604 0267.</p>
 <p>The prices for the cottages can be found here: <a title="Booking Granary" href="BookingGranary.html">The Granary</a> and <a title="Booking Byre" href="BookingByre.html">The Byre</a>.</p>
 
-<script type="text/javascript">
-$(function(){
-	pexetoContactForm.set("http://www.pen-y-holt.co.uk/send-email.php", "Message sent", "Please insert your name", "Please insert a valid email", "Please insert your question");
-});
-</script>
-<form action="" method="post" id="submit_form">
- <div class="contact_form_input">
- <h6>Name<span class="mandatory">*</span></h6>
-  <input type="text" name="name_text_box" class="input form_input" id="name_text_box" />
-  </div>
-  
-  <div class="contact_form_input">
-  <h6>Your e-mail <span class="mandatory">*</span> </h6>
-  <input type="text" name="email_text_box" class="input form_input" id="email_text_box" />
- 	</div>
- 
- <div class="contact_form_textarea">
-  <h6>Question<span class="mandatory">*</span></h6>
-  <textarea name="question_text_area" rows="" cols="" class="textArea input form_input"
-    id="question_text_area"></textarea>
-    <br/><br/>
-  </div>
-  
-  <a class="button" id="send_button"><span>Send</span></a>
-  <div id="contact_status" >
-   <div class="check hidden"></div>
-      <!-- leave for displaying sending message status -->
-  </div>
+
+
+
+<form action="http://formspree.io/josef.wasinski@gmail.com"
+      method="POST">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="hidden" name="_subject" value="Pen-y-holt Enquiry" />
+    <input type="email" name="_replyto" placeholder="Your email">
+ 	<textarea name="body"></textarea>    
+    <input type="submit" value="Send">
 </form>
+
 
 
 </div>
