@@ -130,7 +130,20 @@ jQuery(document).ready(function($){
 <form action="http://formspree.io/annewasinski@gmail.com"
       method="POST">
     <input type="text" name="name" placeholder="Your name"></br>
-    <input type="email" name="_replyto" placeholder="Your email"></br>
+    <input id="email" type="email" name="_replyto" placeholder="Your email"></br>
+    <input type="email_confirm" placeholder="Please repeat your email" oninput="check(this)"></br>
+    
+<script language='javascript' type='text/javascript'>
+    function check(input) {
+        if (input.value != document.getElementById('email').value) {
+            input.setCustomValidity('Email Must be Matching.');
+        } else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+    }
+</script>
+
  	<textarea name="body" placeholder="Your message"></textarea></br>    
  	<input type="hidden" name="_next" value="http://pen-y-holt.co.uk/" />
  	    <input type="hidden" name="_subject" value="Pen-y-holt Enquiry" />
