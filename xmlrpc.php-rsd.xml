@@ -2,12 +2,12 @@
   <service>
     <engineName>WordPress</engineName>
     <engineLink>http://wordpress.org/</engineLink>
-    <homePageLink>http://www.pen-y-holt.co.uk</homePageLink>
+    <homePageLink>https://www.pen-y-holt.co.uk</homePageLink>
     <apis>
-      <api name="WordPress" blogID="1" preferred="true" apiLink="http://www.pen-y-holt.co.uk/xmlrpc.php" />
-      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://www.pen-y-holt.co.uk/xmlrpc.php" />
-      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://www.pen-y-holt.co.uk/xmlrpc.php" />
-      <api name="Blogger" blogID="1" preferred="false" apiLink="http://www.pen-y-holt.co.uk/xmlrpc.php" />
+      <api name="WordPress" blogID="1" preferred="true" apiLink="https://www.pen-y-holt.co.uk/xmlrpc.php" />
+      <api name="Movable Type" blogID="1" preferred="false" apiLink="https://www.pen-y-holt.co.uk/xmlrpc.php" />
+      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://www.pen-y-holt.co.uk/xmlrpc.php" />
+      <api name="Blogger" blogID="1" preferred="false" apiLink="https://www.pen-y-holt.co.uk/xmlrpc.php" />
           </apis>
   </service>
 </rsd>

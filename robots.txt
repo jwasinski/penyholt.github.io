@@ -6,4 +6,4 @@ Disallow: /go/
 User-agent: *
 Disallow: /wp-admin/
 
-Sitemap: http://www.pen-y-holt.co.uk/sitemap.xml
+Sitemap: https://www.pen-y-holt.co.uk/sitemap.xml
