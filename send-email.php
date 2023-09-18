@@ -16,10 +16,10 @@ $message = "$todayis [GMT]\r\n$notes \r\n";
 
 $from = "From: ".$_POST["email"];
 
-$emailToSend='annewasinski@gmail.com';
+$emailToSend='info@pen-y-holt.co.uk';
 
 
-$headers = "From: annewasinski@gmail.com"."\r\n".
+$headers = "From: info@pen-y-holt.co.uk"."\r\n".
  
 "Reply-To: ".$_POST["email"]."\r\n" .
  
