@@ -251,7 +251,7 @@ body {
 	width: 160px;
 	height: 71px;
 	display: block;
-	background-image: url(../images/logo.png);
+	background-image: url(../library/2023/logo.png);
 	background-repeat: no-repeat;
 }
 
@@ -2581,4 +2581,4 @@ background-image: -moz-linear-gradient(
 
 }
 
-body{background-color:#99b2b7;}body{background-image:url("../images/patterns/pattern4.png");}#logo-container a{background-image:url("../library/2011/06/logo.png");}#logo-container, #logo-container a{width:225px;}a,.post-info, .post-info a{color:#6487f2;}
+body{background-color:#99b2b7;}body{background-image:url("../images/patterns/pattern4.png");}#logo-container a{background-image:url("../library/2023/logo.png");}#logo-container, #logo-container a{width:225px;}a,.post-info, .post-info a{color:#6487f2;}
