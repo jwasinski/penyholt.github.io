@@ -53,7 +53,7 @@
 <script type='text/javascript' src='js/jquery/jquery-ver=1.11.2.js'></script>
 <script type='text/javascript' src='js/jquery/jquery-migrate.min-ver=1.2.1.js'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php-rsd.xml" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="WordPress 4.2.2" />
 <link rel='shortlink' href='Byre.html' />
 <!-- styles for Simple Google Map -->
@@ -101,6 +101,12 @@ jQuery(document).ready(function($){
   <div id="header" >
    <div id="header-top">
 <div id="logo-container" class="center"><a href="index.html"></a></div>
+<!-- Mobile Navigation Structure -->
+<input type="checkbox" id="nav-trigger" class="nav-trigger">
+<label for="nav-trigger" class="nav-button">
+    <span></span>
+</label>
+<div class="nav-overlay"></div>
 <div id="menu-container">
       <div id="menu">
 <div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="index.html">Home</a></li>
@@ -163,7 +169,7 @@ jQuery(document).ready(function($){
 			</dt></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='library/2023/granary-5.jpg'><img width="150" height="150" src="library/2023/granary-5sm.png" class="attachment-thumbnail" alt="The Granary" /></a>
-			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			</dt></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='library/2023/granary-6.webp'><img width="150" height="150" src="library/2023/granary-6sm.png" class="attachment-thumbnail" alt="The Granary" /></a>
 			</dt></dl><dl class='gallery-item'>
@@ -190,9 +196,16 @@ jQuery(document).ready(function($){
       <div id="footer-columns">
 	<div class="four-columns">
     <div class="footer-widget widget_text" id="text-9"><h4>Welcome to Pen-y-Holt</h4>			<div class="textwidget"><a title="Welcome" href="Welcome.html"><img src="library/2011/07/IMG_3233edited.jpg" alt="Anne Portrait" title="Anne Portrait" width="80" height="105" class="alignleft" /></a> A welcome message from Anne, the owner of The Granary and The Byre.</div>
+
+	<div class="textwidget mobile">You can contact Anne via:<br>
+	Mobile: 0777 604 0267<br>
+	Email: <a href="mailto:info@pen-y-holt.co.uk?Subject=Pen-y-Holt%20Farm">info@pen-y-holt.co.uk</a><br>
+	Or via our <a title="Contact Us" href="Contact.html">contact page</a> page.</div>
+
 		</div></div>
-	<div class="four-columns">
+	<div class="four-columns hide-mobile">
     <div class="footer-widget widget_text" id="text-8"><h4>Contact Us</h4>			<div class="textwidget">You can contact Anne via:<br/>
+Phone: 0208 398 6081<br/>
 Mobile: 0777 604 0267<br/>
 Email: <a href="mailto:info@pen-y-holt.co.uk?Subject=Pen-y-Holt%20Farm">info@pen-y-holt.co.uk</a><br/>
 Or via our <a title="Contact Us" href="Contact.html">contact page</a> page.</div>
@@ -201,22 +214,22 @@ Or via our <a title="Contact Us" href="Contact.html">contact page</a> page.</div
     <div class="footer-widget widget_text" id="text-7"><h4>Common Questions</h4>			<div class="textwidget">Here you can find a list of frequently asked questions which our guests often ask before their stay at our cottages. <a title="Frequently Asked Questions" href="Questions.html">Learn More »</a></div>
 		</div></div>
 	<div class="four-columns-4">
-    <div class="footer-widget widget_text" id="text-6"><h4>Keep in Contact</h4>			<div class="textwidget"><img class="alignleft size-full wp-image-528" title="Twitter" src="library/2011/07/button-twitter-follow-us.gif" alt="Follow us on Twitter" width="181" height="40" />
+    <!-- <div class="footer-widget widget_text" id="text-6"><h4>Keep in Contact</h4>			<div class="textwidget"><img class="alignleft size-full wp-image-528" title="Twitter" src="library/2011/07/button-twitter-follow-us.gif" alt="Follow us on Twitter" width="181" height="40" />
 <br class="clear" />
 <img class="alignleft size-full wp-image-527" title="Facebook" src="library/2011/07/button-facebook-become-a-fan.gif" alt="Become a Fan on Facebook" width="181" height="40" /></div>
-		</div></div>
+		</div>--></div>
 </div>
 </div>
 </div>
 <div id="copyrights">
-<h5 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="center">© Copyright 2008-2023 <span itemprop="streetAddress">Pen-y-Holt Farm</span>, <span itemprop="addressLocality">Castlemartin</span>, <span itemprop="addressRegion">Pembrokeshire</span>, <span itemprop="postalCode">SA71 5HW</span> - <a href="sitemap.xml">Sitemap</a></h5>
+<h5 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="center">© Copyright 2008-2023 <span itemprop="streetAddress">Pen-y-Holt Farm</span>, <span itemprop="addressLocality">Castlemartin</span>, <span itemprop="addressRegion">Pembrokeshire</span>, <span itemprop="postalCode">SA71 5HW</span> - <a href="sitemap.xml">Sitemap</a> - <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><span itemprop="ratingValue">5</span>/5</h5>
 </div>
 <!-- FOOTER ENDS -->
 </div>
 </div>
-<meta itemprop="name" content="Pen-y-Holt Farm Luxury Holiday Cottages"><meta itemprop="telephone" content="0777 604 0267"><meta itemprop="email" content="info@pen-y-holt.co.uk"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"><meta itemprop="ratingCount" content="8"></span><meta itemprop="url" content="https://www.pen-y-holt.co.uk">
+<meta itemprop="name" content="Pen-y-Holt Farm Luxury Holiday Cottages"><meta itemprop="telephone" content="0777 604 0267"><meta itemprop="email" content="info@pen-y-holt.co.uk"><span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"><meta itemprop="ratingCount" content="8"></span><meta itemprop="url" content="http://www.pen-y-holt.co.uk">
 </div>
-<div id="su-footer-links" style="text-align: center;"></div>
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript' src='js/comment-reply.min-ver=4.2.2.js'></script>
 </body>
 </html>
 
