@@ -2703,7 +2703,7 @@ div.ppt {
         width: 30px;
         height: 20px;
         position: fixed; /* Changed to fixed */
-        top: 30px;      /* Fixed position from top */
+        top: 20px;      /* Fixed position from top */
         right: 40px;    /* Fixed position from right */
         z-index: 1000;  /* Increased z-index to stay on top */
         cursor: pointer;
