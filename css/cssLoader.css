@@ -365,9 +365,12 @@ a.sf-with-ul {
 /*---------------------------SLIDER----------------------------*/
 	
 #slider-container,#page-title {
-	width: 980px;
+	width: 100%;
 	height: auto;
+	min-height: 370px;
 	position: relative;
+	max-width: 980px; /* Original fixed width as max-width */
+    margin: 0 auto;
 }
 
 #page-title {
@@ -388,9 +391,9 @@ a.sf-with-ul {
 }
 
 #static-header-img img{
-	margin-top:-6px;
-	margin-bottom:-6px;
-	width:980px;
+	object-fit: cover;
+  	object-position: center center;	
+	width: 100%;
 }
 
 #slider-container-shadow {
@@ -589,33 +592,101 @@ a.sf-with-ul {
 
 /*-------------------------END THUMBNAIL SLIDER----------------------------*/
 	/*-------------------------NIVO SLIDER----------------------------*/
+
+#slider-container {
+    width: 100%;
+    max-width: 980px;
+    height: 370px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide:first-child {
+    opacity: 1;
+    z-index: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide:nth-child(2) { animation: fadeOn 25s infinite; animation-delay: 0s; }
+.slide:nth-child(3) { animation: fadeOn 25s infinite; animation-delay: 5s; }
+.slide:nth-child(4) { animation: fadeOn 25s infinite; animation-delay: 10s; }
+.slide:nth-child(5) { animation: fadeOn 25s infinite; animation-delay: 15s; }
+.slide:nth-child(6) { animation: fadeOn 30s infinite; animation-delay: 20s; }
+.slide:nth-child(7) { animation: fadeOn 35s infinite; animation-delay: 25s; }
+.slide:nth-child(8) { animation: fadeOn 40s infinite; animation-delay: 30s; }
+.slide:nth-child(9) { animation: fadeOn 45s infinite; animation-delay: 35s; }
+.slide:nth-child(10) { animation: fadeOn 50s infinite; animation-delay: 40s; }
+
+@keyframes fadeOn {
+    0%, 16% { opacity: 0; }
+    20%, 96% { opacity: 1; }
+    100% { opacity: 0; }
+}
 	
 #nivo-slider {
-	width: 980px;
-	height:370px;
-	margin-top: -6px;
-	background-image: url(../images/ajax-loader.gif);
-	background-repeat: no-repeat;
-	background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px !important;
+    background-image: url(../images/ajax-loader.gif);
+    background-repeat: no-repeat !important;
+    background-position-y: center !important;    
+    background-position-x: center !important;    
 }
 
 #nivo-slider img {
-	width: 980px;
-	height: 370px;
-	display: none;
-	top: 0px;
-	left: 0px;
+    height: 100%;
+    position: absolute;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: none !important;
+}
+
+.nivo-slice {
+    height: 100% !important;
+    background-size: cover !important;
+}
+
+#nivo-slider img:first-child {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .nivo-controlNav {
-	position: absolute;
-	bottom: -34px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 10;
 }
 
 #nivo-controlNav-holder {
-	background-color: #fff;
-	height: 50px;
-	border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+    height: auto;
+    min-height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
 }
 
 .nivo-controlNav a {
@@ -674,14 +745,14 @@ a.sf-with-ul {
 	height: auto;
 	min-height: 200px;
 	width: 590px;
-	margin: 40px;
+	margin: 20px 40px 40px 40px;
 }
 
 #full-width {
 	float: left;
 	height: auto;
 	min-height: 200px;
-	margin: 40px;
+	margin: 20px 40px 40px 40px;
 	width:900px;
 }
 
@@ -723,6 +794,7 @@ a.sf-with-ul {
 	align-content: center;
   	align-items: center;
   	justify-content: center;	
+  	margin-top: 1.5vw;
 }
 
 h1.intro {
@@ -1557,7 +1629,7 @@ img.attachment-post_box_img {
 	min-height: 200px;
 	float: right;
 	width: 270px;
-	margin-top: 36px;
+	margin-top: 16px;
 	margin-bottom:30px;
 	margin-right: 40px;
 }
@@ -1825,7 +1897,11 @@ form h6 {
 }
 
 #slider-container {
-	overflow: hidden;
+    width: 100%;
+    max-width: 980px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 #map-canvas {
@@ -2612,6 +2688,10 @@ div.ppt {
 /* Complete Mobile Navigation CSS */
 @media screen and (max-width: 980px) {
 
+	#slider-container, #nivo-slider {
+        width: 100%;
+        margin: 0;
+    }
 
 	.mobile {
 		display: inline-block;

@@ -100,20 +100,33 @@
                         </div>
                     </div>
 
-                    <script type="text/javascript" src="script/jquery.nivo.slider.pack.js"></script>
-                    <script type="text/javascript">
-                        jQuery(function(){
-                            pexetoSite.loadNivoSlider(jQuery('#nivo-slider'), "fade", false, false, 15, 800, 3000, false, true);
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                        const slides = document.querySelectorAll('.slide');
+                        const totalSlides = slides.length;
+                        const totalTime = totalSlides * 5; // 5 seconds per slide
+                        
+                        slides.forEach((slide, index) => {
+                            slide.style.setProperty('--slide-index', index);
+                            slide.style.setProperty('--total-time', totalTime + 's');
                         });
+                    });
                     </script>
 
                     <div id="slider-container">
-                        <div id="slider-container-shadow"></div>
-                        <div id="nivo-slider"> 
+                        <div class="slide">
                             <img src="library/2023/home-carousel-both-cottages.jpg" alt="The Luxury 5 Star Granary Cottage"/>
+                        </div>
+                        <div class="slide">
                             <img src="library/2023/home-carousel-byre-livingroom.jpg" alt="The Rustic Traditional Open Plan Ground Floor"/>
+                        </div>
+                        <div class="slide">
                             <img src="library/2023/home-carousel-granary-living.jpg" alt="The Contemporary but Traditional Living Area"/>
+                        </div>
+                        <div class="slide">
                             <img src="library/2023/home-carousel-byre-bedroom.jpg" alt="The Stunning Master Bedroom of The Byre"/>
+                        </div>
+                        <div class="slide">
                             <img src="library/2023/home-carousel-granary-bedroom.jpg" alt="The Charming Master Bedroom of The Granary"/>
                         </div>
                     </div>
