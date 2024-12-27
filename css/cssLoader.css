@@ -2678,6 +2678,10 @@ div.ppt {
 	display: none;
 }
 
+	.pp_expand {
+    	display: none !important;
+    }
+
 /* Complete Mobile Navigation CSS */
 @media screen and (max-width: 980px) {
 
@@ -2911,6 +2915,53 @@ div.ppt {
     	padding: 5%;
     	background-color: #f7f7f4;
     }
+
+	.pp_expand {
+    	display: none !important;
+    }
+
+    .pp_pic_holder {
+    	width: 90vw !important;
+    	max-height: 90vw !important;
+    	left: 2.5vw !important;
+    }
+    .pp_top {
+    	height: 10px;
+    }
+    .pp_bottom {
+    	height: 10px;
+    }
+    .pp_content {
+    	height: auto !important;
+    }
+    .pp_content_container .pp_left {
+    	padding-left: 10px;
+    }
+    .pp_content_container .pp_right {
+    	padding-right: 10px;
+    }
+    .pp_bottom .pp_middle {
+    	height: 10px;
+    	left: 10px;
+    	right: 10px;
+    }
+    .pp_bottom .pp_left {
+    	height: 10px;
+    	width: 10px;
+    }
+    .pp_bottom .pp_right {
+    	height: 10px;
+    	width: 10px;
+    }
+
+    .pp_content_container .pp_details.clearfix {
+    	width: 100% !important;
+    }
+
+    img#fullResImage {
+    	width: 100% !important;
+    	height: auto !important;
+    }    
 }
 
 @media screen and (max-width: 780px) {
@@ -2941,6 +2992,10 @@ div.ppt {
         object-fit: cover !important;
     }
 
+    #static-header-img img {
+    	height: 240px !important;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -2968,6 +3023,10 @@ div.ppt {
 	    position: relative;
 	    top: 60px;
 	    margin-bottom: 60px;
+    }
+
+    #static-header-img img {
+    	height: 180px !important;
     }
 
     .slide {
