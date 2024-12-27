@@ -2961,6 +2961,24 @@ div.ppt {
         height: 60px;
     }
 
+    #slider-container {
+       	max-height: 200px !important;
+	    height: 200px !important;
+	    min-height: 200px !important;
+	    position: relative;
+	    top: 60px;
+	    margin-bottom: 60px;
+    }
+
+    .slide {
+        height: 200px !important;
+    }
+
+    .slide img {
+        height: 200px !important;
+        object-fit: cover !important;
+    }
+
 
     #logo-container {
         width: 250px;
