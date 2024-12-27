@@ -367,7 +367,7 @@ a.sf-with-ul {
 #slider-container,#page-title {
 	width: 100%;
 	height: auto;
-	min-height: 370px;
+	min-height: 320px;
 	position: relative;
 	max-width: 980px; /* Original fixed width as max-width */
     margin: 0 auto;
@@ -443,7 +443,7 @@ a.sf-with-ul {
 	left: 0px;
 	z-index: 3;
 	width: 700px;
-	height: 370px;
+	height: 320px;
 	visibility: hidden;
 }
 
@@ -596,7 +596,7 @@ a.sf-with-ul {
 #slider-container {
     width: 100%;
     max-width: 980px;
-    height: 370px;
+    height: 320px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -1896,13 +1896,6 @@ form h6 {
 	margin-top: 3px;
 }
 
-#slider-container {
-    width: 100%;
-    max-width: 980px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-}
 
 #map-canvas {
 	width: 268px;
@@ -2728,13 +2721,13 @@ div.ppt {
 
     /* Logo */
     #logo-container {
-        width: 300px;
+        width: 200px;
         margin: 0 0 0 40px;
         float: none;
     }
 
     #logo-container a {
-        width: 300px;
+        width: 200px;
         height: 71px;
         display: block;
         background-size: contain;
@@ -2930,6 +2923,24 @@ div.ppt {
     	width: 30% !important;
     }
 
+    #slider-container {
+       	max-height: 240px !important;
+	    height: 240px !important;
+	    min-height: 240px !important;
+	    position: relative;
+	    top: 60px;
+	    margin-bottom: 60px;
+    }
+
+    .slide {
+        height: 240px !important;
+    }
+
+    .slide img {
+        height: 240px !important;
+        object-fit: cover !important;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -2949,6 +2960,7 @@ div.ppt {
     #header-top {
         height: 60px;
     }
+
 
     #logo-container {
         width: 250px;
@@ -2970,3 +2982,4 @@ div.ppt {
 
 
 }
+
