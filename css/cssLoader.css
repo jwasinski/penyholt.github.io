@@ -2962,20 +2962,20 @@ div.ppt {
     }
 
     #slider-container {
-       	max-height: 200px !important;
-	    height: 200px !important;
-	    min-height: 200px !important;
+       	max-height: 180px !important;
+	    height: 180px !important;
+	    min-height: 180px !important;
 	    position: relative;
 	    top: 60px;
 	    margin-bottom: 60px;
     }
 
     .slide {
-        height: 200px !important;
+        height: 180px !important;
     }
 
     .slide img {
-        height: 200px !important;
+        height: 180px !important;
         object-fit: cover !important;
     }
 
